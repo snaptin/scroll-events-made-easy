@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skrollr.js</title>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
+       
+        <!-- background -->
+        <div class="fixed-bg"
+           data-0="background-color: rgb(112,188,32);"
+           data-1000="background-color: rgb(50,50,50); width: 100%; left: 0%;"
+           data-2000="width: 60%; left: 20%;">
+        </div>
+        
+        <div class="slide-nav">
+            <a href="#" class="btn-previous">Previous</a>
+            <a href="#" class="btn-next">Next</a>
+        </div>
+        
+        <section id="slide01" class="slide"
+           data-0="top: 0%;"
+           data-500="top: -100%;">
+            <div class="slide-content">
+                <h2>Scroll Effects with skrollr.js</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi esse, sequi at, quaerat adipisci perferendis ipsam architecto repellat perspiciatis laudantium repudiandae quam modi eveniet et debitis inventore dolorem. Ipsum, adipisci.</p>
+            </div>
+        </section>
+        
+        <section id="slide02" class="slide"
+           data-500="left: 100%; opacity: 0;"
+           data-1000="left: 0%; opacity: 1;"
+           data-2000="opacity: 0;">
+            <div class="slide-content">
+                <h2>Enter Stage Right</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi esse, sequi at, quaerat adipisci perferendis ipsam architecto repellat perspiciatis laudantium repudiandae quam modi eveniet et debitis inventore dolorem. Ipsum, adipisci.</p>
+            </div>
+        </section>
+        
+        <section id="slide03" class="slide"
+           data-1000="top: -100%; opacity: 0;"
+           data-2000="top: 0%; opacity: 1;">
+            <div class="slide-content">
+                <h2>Narrow the Margins</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi esse, sequi at, quaerat adipisci perferendis ipsam architecto repellat perspiciatis laudantium repudiandae quam modi eveniet et debitis inventore dolorem. Ipsum, adipisci.</p>
+            </div>
+        </section>
+        
+        <section id="slide04" class="slide"
+           data-2000="opacity: 0;"
+           data-3000="opacity: 1;">
+            <div class="slide-content"
+               data-2000="top: 200px;"
+               data-3000="top: 0px;">
+                <h2>The Possibilities are Endless</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi esse, sequi at, quaerat adipisci perferendis ipsam architecto repellat perspiciatis laudantium repudiandae quam modi eveniet et debitis inventore dolorem. Ipsum, adipisci.</p>
+            </div>
+        </section>
+        
+        <div class="shuttle slide"
+           data-2500="top: 100%;"
+           data-4000="top: -100%;">
+            <img src="img/shuttle.png" alt="Shuttle" />
+        </div>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script>
+            var s = skrollr.init();
+        </script>
+    </body>
+</html>

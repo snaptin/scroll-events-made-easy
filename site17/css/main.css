@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; font-family: arial, sans-serif; }
+body { margin: 0; padding: 0; }
+
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slide-content {
+    width: 40%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+}
+
+#slide04 {
+    background: url('../img/stars.gif') top left;
+    background-size: cover;
+}
+
+.shuttle { margin-left: 20px; }
+
+/***** SLIDE NAVIGATION *******/
+.slide-nav {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -105px;
+    z-index: 9999;
+    width: 210px;
+}
+
+.slide-nav a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+
+.slide-nav a:last-child {
+    margin-right: 0;
+}

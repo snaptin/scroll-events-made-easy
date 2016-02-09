@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skrollr.js</title>
+        
+        <style>
+            * { box-sizing: border-box; }
+            html, body {
+                height: 100%;
+            }
+            
+            body {
+                font-family: arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                color: white;
+            }
+            
+            div { position: relative; }
+            
+            .fixed-bg {
+                padding: 20px;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                z-index: 0;
+            }
+            
+            .container {
+                width: 800px;
+                margin: 0 auto;
+            }
+            
+            .text01 {
+                position: relative;
+                color: red;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fixed-bg"
+            data-0="background-color: rgb(0,0,0);"
+            data-1000="background-color: rgb(255,0,0);"></div>
+        <div class="container">
+            <div class="text01">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore mollitia sed ipsa ipsam excepturi molestias molestiae tempora consequuntur ea illum harum voluptates sit, nostrum, consectetur quam aliquid quis optio facere.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nemo debitis ab sed. Aut ipsa hic magni in natus rem reiciendis quaerat, nulla consectetur omnis incidunt commodi expedita dignissimos molestiae.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis at maxime tenetur veritatis sequi. Optio fugiat doloribus, voluptatem voluptates, corporis id asperiores ad rerum. Sed molestias beatae, laborum voluptatibus maiores.</p>
+                <p>Ad cum et eos quas rerum, quos, modi culpa doloribus laborum soluta provident dolorem voluptate animi voluptatem! Rem natus cum harum est at. Eveniet quas sunt praesentium, nesciunt eaque officia.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sequi, magni amet voluptate libero sit ratione perferendis facilis error iusto sunt animi tempora totam, ipsum blanditiis delectus dolorum impedit quia.</p>
+                <p>Autem dolore illum id assumenda maiores velit, iusto fugit fuga aut reprehenderit, voluptatum, facere! Minima dignissimos, rerum labore debitis qui iste enim aut ratione molestiae dolorem doloremque assumenda. Ullam, hic.</p>
+                <p>Tempore eveniet illum, voluptatem possimus harum quis perspiciatis, error atque consequuntur rem odit, facilis animi! Impedit saepe odio quasi qui repellendus, nihil reiciendis error iure ullam voluptates, architecto, similique voluptatibus.</p>
+                <p>Vel eius aliquid in deleniti veniam, reprehenderit enim reiciendis est a aperiam. Neque dicta ab laborum aperiam, quo tempora cumque ad eveniet, nostrum corporis eaque voluptatibus ut, optio. Distinctio, architecto.</p>
+                <p>Excepturi iure cumque, sit, quia earum ut quibusdam reiciendis, accusamus quaerat dolore cupiditate officiis quae fuga sapiente labore hic commodi delectus. Voluptatibus eveniet sequi ex, sit qui maxime corporis quidem.</p>
+            </div>
+            <div class="text02"
+               data-center-top="color: rgb(0,0,255);"
+               data-top-top="color: rgb(255,255,255);">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ipsam vero laboriosam, quaerat, facere enim magnam est consectetur aliquam aliquid commodi iure non blanditiis accusantium quisquam alias ex exercitationem? Unde.</p>
+                <p>Labore temporibus quidem repellat doloremque? Sed doloremque minus tenetur dignissimos perferendis earum ipsum, eos, nostrum, voluptatibus dolor adipisci assumenda repellat! Molestiae nisi perferendis dolores esse error amet sint, facere quia.</p>
+                <p>Illum ullam id vero facilis, ex eligendi non, iste soluta dolorem eaque quod est nulla dignissimos sapiente aliquid obcaecati, porro neque, harum magni culpa laborum nihil ad facere! Quibusdam, dolorem.</p>
+                <p>Corporis porro eveniet quos explicabo in voluptas quae recusandae excepturi voluptatem doloribus tempora unde sunt pariatur eos ad, officiis nihil vel veniam maxime, earum! A dolore ullam, earum maiores accusantium.</p>
+                <p>Quasi dolorem eaque deserunt velit, officiis necessitatibus! In officiis vitae, ea debitis voluptatem necessitatibus. Impedit, quo quasi sed commodi sint optio doloribus, nihil blanditiis accusamus, aspernatur reprehenderit provident voluptatum minus.</p>
+            </div>
+        </div>
+        
+        <!--
+            BROWSER LEVEL ATTRIBUTES
+            data-start => scrolled to the top of the document
+            data-100-start => after scrolling down 100px
+            data-end => at the bottom of the document
+            data-100-end => 100px before the bottom of the document
+            data-100 => same as data-100-start
+            
+            ELEMENT LEVEL ATTRIBUTES
+            data-top => top of an element = top of the browser
+            data-100-top => top of an element = 100px below the top of the browser
+            data--100-top => top of element = 100px above the top of the browser
+            data-bottom => bottom of element = bottom of browser
+            data-100-bottom => bottom of element = 100px below bottom of browser
+            data--100-bottom => bottom of element = 100px above bottom of browser
+            data-center => element vertically centered in browser
+            data-[browserPosition]-[elementPosition] (e.g., data-center-top)
+        -->
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script>
+            var s = skrollr.init();
+        </script>
+    </body>
+</html>
